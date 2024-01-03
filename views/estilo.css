@@ -1,0 +1,23 @@
+div {
+    border: 2px;
+    border-style: solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+    margin-left: 300px;
+    width: 1110px;
+}
+
+table,th,tr {
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 1100px;
+}
+
+li{
+    font-size: large;
+}

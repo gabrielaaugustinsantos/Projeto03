@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Atividade 03</title>
+    </head>
+    <body>
+        <h1>Fatura de Serviços de Telecomunicações</h1>
+        <hr>
+        <form action="/processar" method="post">
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+
+                <label for="cpf">CPF:</label><br>
+                <input type="text" name="cpf" id="cpf" size="15"><br><br>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" size="30"><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" name="telefone" id="telefone" size="20"><br><br>
+			
+                <label for="endereco">Endereço:</label><br>
+                <textarea name="endereco" id="endereco" cols="100" rows="3"></textarea>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Dados do Serviço</legend>
+
+                <label for="descricao">Descrição:</label><br>
+                <textarea name="descricao" id="descricao" cols="100" rows="3"></textarea><br><br>
+
+                <label for="data">Data de Realização:</label><br>
+                <input type="date" name="data" id="data" size="30"><br><br>
+
+                <label for="tipo">Tipo:</label><br>
+                <select name="tipo" id="tipo" required>
+                        <option value="" disabled>Selecione um Serviço</option>
+                        <option value="1">Instalação de Telefone/Internet</option>
+                        <option value="2">Manutenção de Linha Telefônica/Internet</option>
+                        <option value="3">Troca de Equipamentos (modem)</option>
+						<option value="4">Suporte Técnico</option>
+                </select><br><br>
+
+                <label for="tempo">Tempo para Realização (em horas):</label><br>
+                <input type="text" name="tempo" id="tempo" size="20"><br><br>
+
+                <label for="valor">Valor Unitário:</label><br>
+                <input type="text" name="valor" id="valor" size="18"><br><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Dados da Fatura</legend>
+
+                <label for="emissao">Data de Emissão:</label><br>
+                <input type="date" name="emissao" id="emissao" size="30"><br><br>
+
+                <label for="vencimento">Data de Vencimento:</label><br>
+                <input type="date" name="vencimento" id="vencimento" size="30"><br><br>
+            </fieldset><br>
+
+            <input type="submit" name="imprimirfatura" value="Imprimir Fatura">
+            <input type="reset" name="limpar" value="Limpar">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Atividade 03</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+                <div>
+                    <img src="./tabajara.jpg" width="200" height="100">
+                    <p1 style="font-size: xx-large; margin-left: 30%; vertical-align: 100%;">Fatura Online</p1>
+                </div>
+
+                <div>
+                            <h4>Dados do Cliente</h4>
+                            <ul>
+                            <li>CPF: <%= cpf%></li>
+                            <li>Nome: <%= nome%></li>
+                            <li>Telefone: <%= telefone%></li>
+                            <li>Endereço: <%= endereco%></li>
+                            </ul>
+                        </td>
+                    </tr>
+              
+    <table>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Data de Realização</th>
+                            <th>Tipo de Serviço</th>
+                            <th>Tempo de Realização (em horas)</th>
+                            <th>Valor Unitário</th>
+                        </tr>
+
+                        <tr>
+                            <th><%= descricao%></th>
+                            <th><%= data%></th>
+                            <th><%= servico%></th>
+                            <th><%= tempo%></th>
+                            <th><%= valor%></th>
+                        </tr>
+     </table>
+                   
+                      
+                            <p style="color: red; text-align: center;"> 
+                                <b> Valor do ICMS: R$ <%= icms%></b>&emsp;&emsp;&emsp;
+                                <b>Percentual do ICMS: <%= percentual%>%</b>&emsp;&emsp;&emsp;
+                                <b>Valor Total: <%= total%></b>
+                            </p>
+                          
+                            <a href="/">Voltar para a página anterior</a>
+                </div>   
+                    
+               
+
+    </body>
+</html>
